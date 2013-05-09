@@ -113,9 +113,9 @@ if cmd not in available_commands or (cmd <> 'list' and len(sys.argv) < 3):
 	print "\nUsage: %s command url [parameters]" % sys.argv[0]
 	print "Available commands: ", ','.join(available_commands)
 	print """\nExamples: 
-  pkeep.py add pt001424@myserver.com
-  pkeep.py get pt001424@myserver.com get # Password printed to stdout
-  pkeep.py clipget pt001424@myserver.com clipget # Password available from the clipboard
+  pkeep.py add myuser@myserver.com
+  pkeep.py get myuser@myserver.com get # Password printed to stdout
+  pkeep.py clipget myuser@myserver.com clipget # Password available from the clipboard
   pkeep.py list myserver.com # 
 	"""
 	sys.exit(2)
